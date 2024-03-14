@@ -24,16 +24,17 @@ class Ui_Form(object):
         if not Form.objectName():
             Form.setObjectName(u"Form")
         Form.resize(667, 726)
-        Form.setStyleSheet(u" background-color: #fcf7ec ")
+        Form.setStyleSheet(u"background-color: #fcf7ec; \n"
+"")
         self.gridLayout_3 = QGridLayout(Form)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.frame_3 = QFrame(Form)
         self.frame_3.setObjectName(u"frame_3")
-        self.frame_3.setStyleSheet(u"logo{\n"
+        self.frame_3.setStyleSheet(u"background-color: #fcf7ec; \n"
+"logo{\n"
 "height:50%;\n"
 "width: auto;\n"
-"};\n"
-"background-color: #fcf7ec; ")
+"};")
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
         self.gridLayout = QGridLayout(self.frame_3)
@@ -89,6 +90,8 @@ class Ui_Form(object):
 "    color: white;\n"
 "    background-color: rgba(106, 38, 52, 0.9);\n"
 "    font-weight: bold;\n"
+"    border-radius: 10px;\n"
+"    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Dodaj cień */\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
@@ -100,6 +103,7 @@ class Ui_Form(object):
 "    border-style: inset;\n"
 "}\n"
 "")
+
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout = QVBoxLayout(self.frame)

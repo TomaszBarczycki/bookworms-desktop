@@ -1,6 +1,6 @@
 import sys
 from PySide6.QtWidgets import QApplication, QWidget
-from startpage_ui import Ui_Form
+from registrationpage_ui import Ui_Form
 
 def main():
     app = QApplication(sys.argv)
