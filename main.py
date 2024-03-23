@@ -1,14 +1,21 @@
 import sys
-from PySide6.QtWidgets import QApplication, QWidget
-from registrationpage_ui import Ui_Form
-
-def main():
-    app = QApplication(sys.argv)
-    window = QWidget()
-    ui = Ui_Form() 
-    ui.setupUi(window) 
-    window.show()
-    sys.exit(app.exec())
+from PySide6.QtWidgets import QApplication, QStackedWidget
+from src.loginpage import LoginPage
+from src.startpage import StartPage
 
 if __name__ == '__main__':
-    main()
+    app = QApplication(sys.argv)
+
+    stackedWidget = QStackedWidget()
+    stackedWidget.setStyleSheet("background-color: #fcf7ec;")
+
+    startPage = StartPage(stackedWidget)
+    loginPage = LoginPage(stackedWidget)
+
+    stackedWidget.addWidget(startPage)
+    stackedWidget.addWidget(loginPage)
+    stackedWidget.setWindowTitle("Bookworms")
+
+    stackedWidget.show()
+
+    sys.exit(app.exec())

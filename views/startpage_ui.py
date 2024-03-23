@@ -91,7 +91,6 @@ class Ui_Form(object):
 "    background-color: rgba(106, 38, 52, 0.9);\n"
 "    font-weight: bold;\n"
 "    border-radius: 10px;\n"
-"    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Dodaj cień */\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"

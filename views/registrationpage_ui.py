@@ -120,6 +120,7 @@ class Ui_Form(object):
 "color: white;\n"
 "border-top: none;")
         self.lineEdit_3.setFrame(True)
+        self.lineEdit_3.setEchoMode(QLineEdit.Password)
 
         self.gridLayout_2.addWidget(self.lineEdit_3, 7, 0, 1, 1, Qt.AlignHCenter)
 
@@ -130,6 +131,7 @@ class Ui_Form(object):
 "color: white;\n"
 "border-top: none;")
         self.lineEdit_4.setFrame(True)
+        self.lineEdit_4.setEchoMode(QLineEdit.Password)
 
         self.gridLayout_2.addWidget(self.lineEdit_4, 9, 0, 1, 1, Qt.AlignHCenter)
 

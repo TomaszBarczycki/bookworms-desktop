@@ -17,7 +17,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
     QLabel, QLineEdit, QPushButton, QSizePolicy,
-    QSpacerItem, QWidget)
+    QSpacerItem, QWidget, QMessageBox)
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -93,6 +93,7 @@ class Ui_Form(object):
         self.gridLayout_2.addWidget(self.label_8, 1, 0, 1, 1, Qt.AlignBottom)
 
         self.lineEdit_2 = QLineEdit(self.frame)
+        self.lineEdit_2.setEchoMode(QLineEdit.Password)
         self.lineEdit_2.setObjectName(u"lineEdit_2")
         self.lineEdit_2.setMaximumSize(QSize(220, 16777215))
         self.lineEdit_2.setStyleSheet(u"border-bottom: 2px solid white;\n"
