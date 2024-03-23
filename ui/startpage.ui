@@ -14,17 +14,18 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"> background-color: #fcf7ec </string>
+   <string notr="true">background-color: #fcf7ec; 
+</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_3">
    <item row="0" column="0" rowspan="2" colspan="4" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
     <widget class="QFrame" name="frame_3">
      <property name="styleSheet">
-      <string notr="true">logo{
+      <string notr="true">background-color: #fcf7ec; 
+logo{
 height:50%;
 width: auto;
-};
-background-color: #fcf7ec; </string>
+};</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
